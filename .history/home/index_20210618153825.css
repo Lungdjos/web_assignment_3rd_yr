@@ -1,0 +1,182 @@
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: montserrat;
+    }
+    
+    nav {
+        background: #592C12;
+        height: 60px;
+        width: 100%;
+    }
+    
+    label.logo {
+        color: white;
+        font-size: 35;
+        line-height: 60px;
+        padding: 0 100px;
+        font-weight: bold;
+    }
+    
+    nav ul {
+        float: right;
+        margin-right: 20px;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        line-height: 60px;
+        margin: 0 20px;
+    }
+    
+    nav ul li a {
+        color: white;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+    }
+    
+    a.active,
+    a:hover {
+        background: #A64208;
+        transition: 0.5s;
+    }
+    
+    .checkbtn {
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 60px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    #check {
+        display: none;
+    }
+    
+    @media (max-width: 1080px) {
+        label.logo {
+            font-size: 30px;
+            padding-left: 50px;
+        }
+        nav ul li a {
+            font-size: 16px;
+        }
+    }
+    
+    @media (max-width: 1080px) {
+        .checkbtn {
+            display: block;
+        }
+        ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #592C12;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all 0.5s;
+        }
+        nav ul li {
+            display: block;
+            margin: 50px 0;
+            line-height: 20px;
+        }
+        nav ul li a {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a:hover,
+        a.active {
+            background: none;
+            color: #F2D1B3;
+        }
+        #check:checked~ul {
+            left: 0;
+        }
+    }
+    
+    section {
+        background: url(/assets/images/elephants.jpg);
+        background-size: no repeat;
+        height: calc(180vh - 90px);
+    }
+    /**New Content Added*/
+    
+    nav ul li ul a {
+        display: block;
+        padding: 0 15px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav ul li:hover>ul {
+        display: block;
+    }
+    
+    nav ul ul {
+        position: absolute;
+        top: 30px;
+        list-style-type: none;
+        line-height: 60px;
+    }
+    
+    nav ul ul li {
+        display: none;
+    }
+    
+    nav ul ul a {
+        width: 100%;
+        float: none;
+        display: list-item;
+        position: relative;
+    }
+    
+    nav ul ul li a {
+        display: list-item;
+        list-style-type: none;
+        position: inherit;
+    }
+    /**Wild Life Formatting*/
+    
+    .welcome {
+        color: ;
+        font-size: 120px;
+        line-height: 0.7em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .num1 {
+        letter-spacing: 0.3em;
+    }
+    
+    .num2 {
+        margin-left: 215px;
+        letter-spacing: 0.8ch;
+    }
+    
+    .num3 {
+        color: #592C12;
+        font-size: 50px;
+        margin-left: 220px;
+        margin-top: 0.3em;
+        font-weight: bold;
+        letter-spacing: 18px;
+    }
+    
+    .para2 {
+        font-variant-position: initial;
+        font-size: 1.6em;
+        color: rgb(247, 236, 236);
+        display: relative;
+        float: initial;
+    }

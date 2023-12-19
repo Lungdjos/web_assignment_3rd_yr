@@ -1,0 +1,16 @@
+.slide-frame {
+    overflow: hidden;
+    height: 600px;
+    max-width: 1280;
+    min-width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@-webkit-keyframes slide-animation {
+    0% {}
+}
+
+.slide-imag {}

@@ -1,0 +1,63 @@
+.slide-frame {
+    overflow: hidden;
+    height: 600px;
+    max-width: 1280;
+    min-width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@-webkit-keyframes slide-animation {
+    0% {
+        left: 80px;
+    }
+    10% {
+        left: 0px
+    }
+    20% {
+        left: 1200px;
+    }
+    30% {
+        left: 1200px;
+    }
+    40% {
+        left: 2400px;
+    }
+    50% {
+        left: 2400px;
+    }
+    60% {
+        left: 1288px;
+    }
+    70% {
+        left: 1288px;
+    }
+    80% {
+        left: 0px;
+    }
+    90% {
+        left: 0px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+.slide-imag {
+    width: 3680px;
+    height: 800px;
+    position: relative;
+    margin: 0 0 0 -2400px;
+    -webkit-animation-name: slide-animation;
+    -webkit-animation-duration: 50s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate-reverse;
+    -webkit-flow-into: inherit;
+    -webkit-animation-play-state: running;
+}
+
+.imag-contain {
+    float: inherit
+}
